@@ -6,6 +6,7 @@
 
 body {
     background-color: #eff2f1;
+    box-sizing: border-box;
 }
 
 nav {
@@ -243,25 +244,28 @@ nav {
             border-radius: 2rem;
         }
     }
+
     @media screen and (max-width:992px) {
-        #sonsection3{
+        #sonsection3 {
             flex-direction: column;
         }
-        
+
     }
 }
 
 #section4 {
-    height: 100vh;
+
 
     #left {
-        
+
         img {
             border-radius: 1rem;
         }
-        #imgr{
+
+        #imgr {
             position: relative;
         }
+
         #imgp {
 
             position: absolute;
@@ -279,16 +283,35 @@ nav {
             color: white;
             border-radius: 2rem;
             border: 0;
-            &:hover{
+
+            &:hover {
                 background-color: black;
             }
         }
     }
+
     @media screen and (max-width:992px) {
-        #sonsection4{
+        #sonsection4 {
             flex-direction: column;
             gap: 4rem;
         }
-        
+
+    }
+}
+
+#section5 {
+    
+
+    #dadimg {
+        position: relative;
+
+        #sonimg {
+            background-color: #dce5e4;
+            height: 80%;
+            border-radius: 1rem;
+            position: absolute;
+            top: 25px;
+            z-index: -1;
+        }
     }
 }
