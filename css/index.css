@@ -300,7 +300,7 @@ nav {
 }
 
 #section5 {
-    
+
 
     #dadimg {
         position: relative;
@@ -312,6 +312,44 @@ nav {
             position: absolute;
             top: 25px;
             z-index: -1;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        #containerimg {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        #container {
+            flex-direction: column;
+        }
+    }
+}
+
+#section6 {
+    #Carousel {
+        height: 418px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+#section7 {
+    a {
+        color: black;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    img{
+        border-radius: 1rem;
+        &:hover{
+            filter: brightness(90%);
         }
     }
 }
