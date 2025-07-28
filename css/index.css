@@ -339,6 +339,15 @@ nav {
 }
 
 #section7 {
+    .contants {
+        display: contents;
+
+        @media screen and (min-width: 768px) and (max-width:992px) {
+            display: block;
+            display: flex;
+        }
+    }
+
     a {
         color: black;
 
@@ -346,10 +355,51 @@ nav {
             text-decoration: none;
         }
     }
-    img{
+
+    img {
         border-radius: 1rem;
-        &:hover{
+
+        &:hover {
             filter: brightness(90%);
         }
+    }
+
+    @media screen and (max-width:767px) {
+        #head {
+            flex-direction: column;
+        }
+
+        #imgs {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width:992px) {
+        #imgs {
+            flex-direction: column;
+        }
+    }
+}
+
+footer {
+    background-color: #FFFFFF;
+    position: relative;
+    #input{
+        button{
+            border: 0;
+            background-color: #3b5d50;
+            color: white;
+            border-radius: 5px;
+            &:hover{
+                background-color: #294138;
+            }
+        }
+    }
+    img{
+        width: 380px;
+        max-width: 80%;
+        position: absolute;
+        top: -107px;
+        right: 10px;
     }
 }
