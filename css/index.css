@@ -338,6 +338,34 @@ nav {
             border-radius: 50%;
         }
     }
+
+    .slide {
+        #buttonSlide {
+            background-color: #3b5d50;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            border: 0;
+            color: white;
+
+            &:hover {
+                background-color: #2f2f2f;
+            }
+        }
+
+        #Next {
+            background-color: #3b5d50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: 0;
+            color: white;
+
+            &:hover {
+                background-color: #2f2f2f;
+            }
+        }
+    }
 }
 
 #section7 {
