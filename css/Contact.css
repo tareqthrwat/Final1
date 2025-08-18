@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eff2f1;
+}
+
+nav {
+    background-color: #3b5d50;
+
+    #logo {
+        font-size: 32px;
+        font-weight: 600;
+        text-decoration: none;
+
+        span {
+            color: #899e96;
+        }
+
+    }
+
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 800;
+            color: #9daea8;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3b5d50;
+            transition: border-bottom 0.3s ease, color 0.3s ease;
+            position: relative;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background: gold;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+
+        }
+
+        a:hover::after {
+            transform: scaleX(1);
+        }
+    }
+
+    #icon {
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+#section1 {
+    padding-top: 2rem;
+    height: 400px;
+    background-color: #3b5d50;
+    overflow: clip;
+
+    #img {
+        height: 100%;
+        position: relative;
+
+
+        img {
+            position: absolute;
+            top: -80px;
+            left: 0px;
+            right: -100px;
+
+            @media screen and (max-width: 992px) {
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .bottom1 {
+        height: 50px;
+        width: 141.047px;
+        background-color: #f9bf29;
+        color: black;
+        border-radius: 2rem;
+        border: 0;
+    }
+
+    .bottom2 {
+        height: 50px;
+        width: 141.047px;
+        background-color: #3b5d50;
+        border: 1px solid #768e85;
+        border-radius: 2rem;
+
+        &:hover {
+            border: 2px solid #FFFFFF;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        #son-section {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:992px) {
+        #son-section {
+            height: 100%;
+            flex-direction: column;
+        }
+    }
+}
+
+#section2 {
+    #dadicon {
+        background-color: #3b5d50;
+        border-radius: 1rem;
+        width: 50px;
+        height: 50px;
+
+        #icon {
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+}
+
+footer {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+
+
+    #input {
+        button {
+            border: 0;
+            background-color: #3b5d50;
+            color: white;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #294138;
+            }
+        }
+    }
+
+    .img {
+        position: absolute;
+        top: -200px;
+        right: 10px;
+        z-index: 1;
+
+        img {
+            width: 380px;
+            max-width: 100%;
+
+        }
+
+        @media screen and (max-width: 767px) {
+            top: -149px;
+
+            img {
+                width: 203px;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            img {
+                width: 291px;
+            }
+        }
+    }
+
+    #logo {
+        font-size: 32px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #3b5d50;
+
+        span {
+            color: #899e96;
+        }
+    }
+
+    .icon-link {
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 0;
+            border-radius: 50%;
+            background-color: #3b5d50;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: #2f2f2f;
+            }
+        }
+    }
+
+    #link {
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: rgb(80, 78, 78);
+            }
+        }
+    }
+
+    .spes {
+        margin-top: 2rem;
+        height: 1px;
+        background-color: #294138;
+    }
+
+    #foot {
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: rgb(80, 78, 78);
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+}
